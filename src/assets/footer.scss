@@ -1,0 +1,40 @@
+$colorWoman: #C300C7;
+$colorMan: #1178B2;
+$colorWomanHover: #d22fd4;
+$colorManHover: #37a3e2;
+
+.footer {
+    padding: 0 90px;
+    padding-bottom: 17px;
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__text_change {
+        font-family: 'Open Sans';
+        font-weight: 400;
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    &__item_change {
+        display: flex;
+        list-style: none;
+        gap: 16px;
+    }
+    &__social_man {
+        cursor: pointer;
+        fill: $colorMan;
+    }
+    &__social_woman {
+        cursor: pointer;
+        fill: $colorWoman;
+    }
+    &__social_man:hover {
+        fill: $colorManHover;
+    }
+    &__social_woman:hover {
+        fill: $colorWomanHover;
+    }
+}

@@ -1,0 +1,70 @@
+$colorWoman: #FFF1F8;
+$colorMan: #EFF9FE;
+
+@font-face {
+    font-family: 'Bad Script';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/bad-script-v16-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/bad-script-v16-latin_cyrillic-regular.woff') format('woff');
+
+ }
+ @font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../fonts/open-sans-v29-latin_cyrillic-regular.woff2') format('woff2'),
+        url('../fonts/open-sans-v29-latin_cyrillic-regular.woff') format('woff');
+
+ }
+ @font-face {
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-display: swap;
+    src: url('../fonts/open-sans-v29-latin_cyrillic-700.woff2') format('woff2'),
+        url('../fonts/open-sans-v29-latin_cyrillic-700.woff') format('woff');
+
+ }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+// Общие классы
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.btn {
+    transition: .5s;
+    cursor: pointer;
+}
+
+.social {
+    transition: .5s;
+}
+
+.man {
+    background: $colorMan;
+}
+
+.woman {
+    background: $colorWoman;
+}
+
+@import url('./normalize.css');

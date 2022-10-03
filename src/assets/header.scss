@@ -1,0 +1,79 @@
+$white: #fff;
+$colorWoman: #C300C7;
+$colorMan: #1178B2;
+$colorWomanHover: #d22fd4;
+$colorManHover: #37a3e2;
+.header {
+    background: #fff;
+    box-shadow: 0px 1px 20px rgba(72, 3, 38, 0.07);
+    z-index: 1;
+        &__container {
+            margin: 0 auto;
+            padding: 0 90px;
+        }
+        &__wrapper_change {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__btn_changetext {
+            display: flex;
+            gap: 30px;
+        }
+        &__btn_changemale {
+            padding: 30px 0;
+            display: flex;
+            gap: 16px;
+            &_man {
+                padding: 0;
+                padding: 10px;
+                background: #FFFFFF;
+                border: 2px solid transparent;
+                border-radius: 10px;
+                box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.04);
+                &_border {
+                    border: 2px solid $colorMan;
+                }
+            }
+            &_man:hover {
+                border: 2px solid $colorMan;
+            }
+            &_woman {
+                padding: 0;
+                padding: 10px;
+                background: #FFFFFF;
+                border: 2px solid transparent;
+                box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.04);
+                border-radius: 10px;
+                &_border {
+                    border: 2px solid $colorWoman;
+                }
+            }
+            &_woman:hover {
+                border: 2px solid $colorWoman;
+            }
+        }
+}
+
+.btn.header__btn_changetextbtn {
+    width: 300px;
+    padding: 22px 0;
+    border-radius: 30px;
+    border: none;
+    color: $white;
+    font-weight: 700;
+    font-size: 18px;
+    &_man {
+        background: $colorMan;
+    }
+    &_woman {
+        background: $colorWoman;
+    }
+}
+
+.btn.header__btn_changetextbtn_woman:hover {
+    background: $colorWomanHover;   
+}
+.btn.header__btn_changetextbtn_man:hover {
+    background: $colorManHover;   
+}
